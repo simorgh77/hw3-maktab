@@ -1,0 +1,130 @@
+@font-face {
+    font-family: sans;
+    src: url("./WorkSans-Italic-VariableFont_wght.ttf");
+}
+html,body{
+padding: 0;
+margin: 0;
+width: 100%;
+height: 100%;
+box-sizing: border-box;
+font-family: sans;
+
+}
+.row{
+    height: 100%;
+}
+.one{
+border-bottom: 1px solid rgb(161, 157, 157);
+border-left: none;
+border-right: none;
+border-top: none;
+    text-align: end;
+    width: 100%;
+    outline: none;
+}
+
+.two{
+    border-bottom: 1px solid rgb(161, 157, 157);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+        text-align: end;
+        outline: none;
+        width: 100%;
+}
+.three{
+    border: none;
+        text-align: center;
+        width: 100%;
+        background-color: rgb(51, 217, 223);
+        color: white;
+        border-radius: 20px;
+        outline: none;
+}
+
+.secure{
+    width: 10%;
+    font-size: 80%;
+    transform: translate(30px 10px);
+}
+/* left................. */
+
+.left{
+    background-image: linear-gradient(to right top, #14bfd8, #00add7, #009bd3, #0087cc, #0073c1, #0078c6, #007dcb, #0082d0, #00a2e3, #00c1ee, #00dff1, #5ffbf1);
+    overflow: hidden;
+}
+
+.svg{
+   width: 20%;
+   height: 20%;
+   position: relative;
+   left: 15%;
+}
+.circle {
+    border-radius: 50%;
+    background-color: deepskyblue;
+    width: 1px;
+    height: 1px;
+    position:absolute;
+    opacity: 0;
+    animation: scaleIn 2s infinite ease-in;
+  }
+@keyframes scaleIn {
+    from {
+      width: 10%;
+      height: 10%;
+      opacity: .2;
+    }
+    to {
+     width: 100%;
+     height: 100%;
+      opacity: 0;
+    }
+  }
+.aghrabe{
+width: 30%;
+height: 80%;
+position: relative;
+right: 25%;
+top: 40%;
+opacity: .2;
+transform-origin: 100% 0%;
+clip-path: polygon(100% 0, 32% 100%, 100% 100%);
+animation: rotate 7s infinite linear;
+
+background: linear-gradient(40deg, rgba(255, 255, 255, .8) ,rgba(255,255,255,.6),rgba(255,255,255,.8),rgba(255,255,255,0.1),rgba(255,255,255,0));
+}
+  @keyframes rotate {
+      from{
+          transform: rotate(0);
+      }
+      to{
+          transform: rotate(360deg);
+      }
+  }
+
+@media screen and (max-width:770px) {
+    .aghrabe{
+        width: 30%;
+        height: 160%;
+        position: relative;
+        right: 25%;
+        top: 80%;
+        opacity: .2;
+        transform-origin: 100% 0%;
+        clip-path: polygon(100% 0, 72% 100%, 100% 100%);
+        animation: rotate 7s infinite linear;
+        
+        background: linear-gradient(40deg, rgba(255, 255, 255, .8) ,rgba(255,255,255,.6),rgba(255,255,255,.8),rgba(255,255,255,0.1),rgba(255,255,255,0));
+        }
+          @keyframes rotate {
+              from{
+                  transform: rotate(0);
+              }
+              to{
+                  transform: rotate(360deg);
+              }
+          }
+        
+}
